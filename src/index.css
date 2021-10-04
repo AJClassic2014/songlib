@@ -1,0 +1,208 @@
+@import "antd/dist/antd.css";
+.form-modal {
+  border-radius: 10px;
+  background: linear-gradient(#ccd8f1, #e7edf7);
+  padding-bottom: 0;
+}
+.form-modal .ant-modal-content,
+.form-modal .ant-modal-body,
+.form-modal .ant-modal-header {
+  background: transparent;
+  border-radius: 10px;
+  border: none;
+}
+.form-modal .form-wrap {
+  width: 45%;
+  margin: 0 0 0 50%;
+}
+.form-modal .form-wrap input,
+.form-modal .form-wrap .ant-select {
+  border-bottom: 1px solid #4b4b4b;
+}
+.form-modal .login-form-wrap {
+  width: 70%;
+  margin: 0 auto;
+}
+.menu {
+  /*background-color: #13598b;*/
+  background-color: #242424;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0 0 9px 3px rgba(41, 41, 41, 0.2);
+}
+.menu .center {
+  width: 1200px !important;
+  margin: 0 auto;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+.menu .nav a {
+  margin: 0 20px;
+  color: #fff;
+}
+.menu .nav a.active {
+  border-bottom: 1px solid #fff;
+  font-weight: 700;
+}
+.menu .user {
+  font-size: 28px;
+}
+.index {
+  height: 100vh !important;
+  width: 100%;
+  position: relative;
+  /*background: linear-gradient(to right top, #1868a1, #0c4670, #148d4d, #2c1488, #0c4670, #1868a1);*/
+  background: linear-gradient(to right top, #4d5f79, #662e21, #6f343c, #62457e, #713c46, #692f21);
+  background-size: 300% 300%;
+  -webkit-animation: Rainbow 60s infinite;
+  animation: Rainbow 60s infinite;
+}
+.index .content {
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.index .center {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.index .center .left h1 {
+  color: #fff;
+  font-size: 46px;
+}
+.index .center .left .left-splash {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 22%;
+  width: 500px;
+  margin-left: -3em;
+  text-align: center;
+  height: 25em;
+}
+.index .center .left .left-splash img {
+  width: 216px;
+  height: 90px;
+}
+.index .center .left .left-splash .text {
+  margin: 20px 0;
+  color: #fff;
+}
+.index .center .right {
+  padding: 160px 0;
+}
+.index .center .right h3 {
+  color: #fff;
+}
+.index .center .right .cards {
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.index .center .right .cards .img-wraps {
+  position: relative;
+}
+.index .center .right .cards .img-wrap {
+  position: relative;
+  height: 0;
+  padding-top: 100%;
+}
+.index .center .right .cards .img-wrap img {
+  position: absolute;
+  width: 50%;
+  max-width: 50%;
+  height: auto;
+}
+.index .center .right .cards .img-wrap img:first-child {
+  top: 0;
+  left: 0;
+}
+.index .center .right .cards .img-wrap img:nth-child(2) {
+  top: 0;
+  left: 50%;
+}
+.index .center .right .cards .img-wrap img:nth-child(3) {
+  top: 50%;
+  left: 0;
+}
+.index .center .right .cards .img-wrap img:nth-child(4) {
+  top: 50%;
+  left: 50%;
+}
+.index .center .right .cards .card-inner {
+  color: #fff;
+  text-align: center;
+}
+.index .center .right .cards .play-hover {
+  position: absolute;
+  display: none;
+  left: 0;
+  top: 0;
+  color: #fff;
+  text-align: center;
+  line-height: 180px;
+  width: 100%;
+  font-size: 28px;
+}
+.index .center .right .cards:hover {
+  background: hsla(0, 0%, 100%, 0.15);
+}
+.index .center .right .cards:hover .play-hover {
+  display: block;
+}
+.index .footer {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  height: 60px;
+  line-height: 60px;
+  padding-bottom: 160px;
+}
+.index .footer .footer-item {
+  margin: 0 16px;
+}
+.player-warp {
+  height: 60px;
+  background-color: #fff;
+  box-shadow: 0 -2px 16px rgba(20, 20, 20, 0.1);
+  border-top: 3px solid #1890ff;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.player-warp .center {
+  width: 1200px;
+  margin: 0 auto;
+}
+.player-warp .image {
+  width: 50px;
+}
+.player-warp .player-btn-group {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+.player-warp .player-btn-group :hover {
+  color: #1890ff;
+}
+.player-warp .player-btn-group .play {
+  font-size: 34px;
+  margin: 0px 8px;
+}
